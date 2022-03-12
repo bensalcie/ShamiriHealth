@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/myhead"
+            android:layout_height="330dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/toptext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:text="For you"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:text="Feb 18 2022, Friday"
+                android:textColor="@color/white"
+                android:id="@+id/secondtext"
+                android:layout_marginStart="15dp"
+
+                android:textSize="16sp"
+                android:layout_below="@id/toptext"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="end"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="45dp"
+                android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
+                android:drawablePadding="6dp"
+
+                android:text="Show more"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <CalendarView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/secondtext"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:textAlignment="center" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                android:layout_width="match_parent"
+                app:cardElevation="3dp"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="16dp"
+
+                android:layout_height="180dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:text="Today"
+                        android:layout_marginStart="10dp"
+                        android:textSize="18sp"
+                        android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:src="@drawable/img"
+                            android:layout_weight="1"
+                            android:layout_margin="4dp"
+                            android:layout_height="wrap_content"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content">
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="match_parent"
+                                android:text="Mental Health"
+                                android:drawablePadding="10dp"
+                                android:drawableStart="@drawable/grey_dot"
+
+                                android:layout_height="wrap_content"/>
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="match_parent"
+                                android:text="Satisfaction"
+                                android:drawablePadding="10dp"
+                                android:drawableStart="@drawable/orange_dot"
+
+                                android:layout_height="wrap_content"/>
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="match_parent"
+                                android:text="Family/Social Support"
+                                android:drawablePadding="10dp"
+                                android:drawableStart="@drawable/light_green_dot"
+
+                                android:layout_height="wrap_content"/>
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="match_parent"
+                                android:text="Work"
+                                android:drawablePadding="10dp"
+                                android:drawableStart="@drawable/green_dot"
+
+                                android:layout_height="wrap_content"/>
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="match_parent"
+                                android:text="Sense of Purpose"
+                                android:drawablePadding="10dp"
+                                android:drawableStart="@drawable/black_dot"
+
+                                android:layout_height="wrap_content"/>
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:text="More"
+                                android:layout_marginEnd="15dp"
+                                android:layout_marginTop="14dp"
+                                android:layout_gravity="end"
+                                android:drawablePadding="10dp"
+                                android:textSize="14sp"
+                                android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                android:layout_width="match_parent"
+                app:cardElevation="3dp"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="16dp"
+
+                android:layout_height="180dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+                    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="16dp"
+                        app:cardUseCompatPadding="true"
+                        app:cardElevation="2dp"
+                        android:layout_weight="1"
+                        app:cardPreventCornerOverlap="true"
+                        android:layout_height="wrap_content">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/bac" />
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="match_parent"
+                                android:text="Veronica N."
+                                android:drawablePadding="10dp"
+                                android:drawableStart="@drawable/grey_dot"
+                                android:textColor="@color/white"
+                                android:alpha="0.9"
+                                android:layout_above="@+id/tvBottom"
+                                android:id="@+id/titlefirst"
+                                android:textSize="17sp"
+                                android:layout_height="wrap_content"/>
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="match_parent"
+                                android:text="Veronica N."
+                                android:id="@+id/tvBottom"
+                                android:drawablePadding="10dp"
+                                android:drawableStart="@drawable/grey_dot"
+                                android:layout_alignParentBottom="true"
+                                android:textColor="@color/white"
+                                android:alpha="0.9"
+                                android:layout_height="wrap_content"/>
+                        </RelativeLayout>
+
+                    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+                    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="16dp"
+                        app:cardUseCompatPadding="true"
+                        app:cardElevation="2dp"
+                        android:layout_weight="1"
+                        app:cardPreventCornerOverlap="true"
+                        android:layout_height="wrap_content">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/bac" />
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="match_parent"
+                                android:text="Veronica N."
+                                android:drawablePadding="10dp"
+                                android:drawableStart="@drawable/grey_dot"
+                                android:textColor="@color/white"
+                                android:alpha="0.9"
+                                android:layout_above="@+id/tv1Bottom"
+                                android:id="@+id/title1first"
+                                android:textSize="17sp"
+                                android:layout_height="wrap_content"/>
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="match_parent"
+                                android:text="Veronica N."
+                                android:id="@+id/tv1Bottom"
+                                android:drawablePadding="10dp"
+                                android:drawableStart="@drawable/grey_dot"
+                                android:layout_alignParentBottom="true"
+                                android:textColor="@color/white"
+                                android:alpha="0.9"
+                                android:layout_height="wrap_content"/>
+                        </RelativeLayout>
+
+                    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:text="More"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_gravity="bottom"
+
+                        android:layout_weight="1"
+                        android:drawablePadding="10dp"
+                        android:gravity="end"
+                        android:textSize="14sp"
+                        android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>
