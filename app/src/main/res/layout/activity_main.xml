@@ -186,126 +186,140 @@
             </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
             <com.google.android.material.circularreveal.cardview.CircularRevealCardView
                 android:layout_width="match_parent"
-                app:cardElevation="3dp"
+                app:cardElevation="2dp"
                 app:cardUseCompatPadding="true"
                 app:cardCornerRadius="16dp"
 
                 android:layout_height="180dp">
                 <LinearLayout
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_height="match_parent">
-                    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
-                        android:layout_width="match_parent"
-                        app:cardCornerRadius="16dp"
-                        app:cardUseCompatPadding="true"
-                        app:cardElevation="2dp"
-                        android:layout_weight="1"
-                        app:cardPreventCornerOverlap="true"
-                        android:layout_height="wrap_content">
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/bac" />
-
-                            <com.google.android.material.textview.MaterialTextView
-                                android:id="@+id/titlefirst"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_above="@+id/tvBottom"
-                                android:alpha="0.9"
-                                android:drawableStart="@drawable/grey_dot"
-                                android:drawablePadding="10dp"
-                                android:text="Veronica N."
-                                android:textColor="@color/white"
-                                android:fontFamily="@font/raleway_extrabold"
-
-                                android:textSize="17sp" />
-
-                            <com.google.android.material.textview.MaterialTextView
-                                android:id="@+id/tvBottom"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentBottom="true"
-                                android:alpha="0.9"
-                                android:drawableStart="@drawable/grey_dot"
-                                android:fontFamily="@font/raleway_extrabold"
-
-                                android:drawablePadding="10dp"
-                                android:text="Veronica N."
-                                android:textColor="@color/white" />
-                        </RelativeLayout>
-
-                    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
-
-                    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
-                        android:layout_width="match_parent"
-                        app:cardCornerRadius="16dp"
-                        app:cardUseCompatPadding="true"
-                        app:cardElevation="2dp"
-                        android:layout_weight="1"
-                        app:cardPreventCornerOverlap="true"
-                        android:layout_height="wrap_content">
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/bac" />
-
-                            <com.google.android.material.textview.MaterialTextView
-                                android:id="@+id/title1first"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_above="@+id/tv1Bottom"
-                                android:alpha="0.9"
-                                android:drawableStart="@drawable/grey_dot"
-                                android:drawablePadding="10dp"
-                                android:text="Veronica N."
-                                android:fontFamily="@font/raleway_extrabold"
-
-                                android:textColor="@color/white"
-                                android:textSize="17sp" />
-
-                            <com.google.android.material.textview.MaterialTextView
-                                android:id="@+id/tv1Bottom"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentBottom="true"
-                                android:alpha="0.9"
-                                android:drawableStart="@drawable/grey_dot"
-                                android:drawablePadding="10dp"
-                                android:text="Veronica N."
-                                android:fontFamily="@font/raleway_extrabold"
-
-                                android:textColor="@color/white" />
-                        </RelativeLayout>
-
-                    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
-
+                    android:layout_height="wrap_content">
                     <com.google.android.material.textview.MaterialTextView
-                        android:layout_width="match_parent"
-                        android:text="More"
-                        android:layout_marginEnd="15dp"
-                        android:layout_marginTop="14dp"
-                        android:layout_gravity="bottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
                         android:fontFamily="@font/raleway_extrabold"
+                        android:text="Your wellness plan"
+                        android:textSize="18sp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+                        <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                            android:layout_width="match_parent"
+                            app:cardCornerRadius="16dp"
+                            app:cardUseCompatPadding="true"
+                            app:cardElevation="2dp"
+                            android:layout_weight="1"
+                            app:cardPreventCornerOverlap="true"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
 
-                        android:layout_weight="1"
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/bac" />
 
-                        android:drawablePadding="10dp"
-                        android:gravity="end"
-                        android:textSize="14sp"
-                        android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
-                        android:layout_height="wrap_content"/>
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/titlefirst"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_above="@+id/tvBottom"
+                                    android:alpha="0.9"
+                                    android:drawableStart="@drawable/grey_dot"
+                                    android:drawablePadding="10dp"
+                                    android:text="Veronica N."
+                                    android:textColor="@color/white"
+                                    android:fontFamily="@font/raleway_extrabold"
+
+                                    android:textSize="17sp" />
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/tvBottom"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:alpha="0.9"
+                                    android:drawableStart="@drawable/grey_dot"
+                                    android:fontFamily="@font/raleway_extrabold"
+
+                                    android:drawablePadding="10dp"
+                                    android:text="Veronica N."
+                                    android:textColor="@color/white" />
+                            </RelativeLayout>
+
+                        </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+                        <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                            android:layout_width="match_parent"
+                            app:cardCornerRadius="16dp"
+                            app:cardUseCompatPadding="true"
+                            app:cardElevation="2dp"
+                            android:layout_weight="1"
+                            app:cardPreventCornerOverlap="true"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/bac" />
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/title1first"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_above="@+id/tv1Bottom"
+                                    android:alpha="0.9"
+                                    android:drawableStart="@drawable/grey_dot"
+                                    android:drawablePadding="10dp"
+                                    android:text="Veronica N."
+                                    android:fontFamily="@font/raleway_extrabold"
+
+                                    android:textColor="@color/white"
+                                    android:textSize="17sp" />
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/tv1Bottom"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:alpha="0.9"
+                                    android:drawableStart="@drawable/grey_dot"
+                                    android:drawablePadding="10dp"
+                                    android:text="Veronica N."
+                                    android:fontFamily="@font/raleway_extrabold"
+
+                                    android:textColor="@color/white" />
+                            </RelativeLayout>
+
+                        </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:text="More"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginTop="14dp"
+                            android:layout_gravity="bottom"
+                            android:fontFamily="@font/raleway_extrabold"
+
+                            android:layout_weight="1"
+
+                            android:drawablePadding="10dp"
+                            android:gravity="end"
+                            android:textSize="14sp"
+                            android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
