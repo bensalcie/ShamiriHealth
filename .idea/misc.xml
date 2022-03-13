@@ -5,7 +5,10 @@
       <map>
         <entry key="app/src/main/res/drawable-v24/back_head.xml" value="0.13385416666666666" />
         <entry key="app/src/main/res/drawable-v24/black_dot.xml" value="0.13385416666666666" />
+        <entry key="app/src/main/res/drawable-v24/curved_corners.xml" value="0.13385416666666666" />
+        <entry key="app/src/main/res/drawable-v24/horizontal_line.xml" value="0.13385416666666666" />
         <entry key="app/src/main/res/drawable-v24/ic_baseline_arrow_forward_ios_24.xml" value="0.13385416666666666" />
+        <entry key="app/src/main/res/drawable-v24/ic_baseline_keyboard_arrow_left_24.xml" value="0.13385416666666666" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.13385416666666666" />
         <entry key="app/src/main/res/drawable/back_head.xml" value="0.2515625" />
         <entry key="app/src/main/res/drawable/black_dot.xml" value="0.2515625" />
