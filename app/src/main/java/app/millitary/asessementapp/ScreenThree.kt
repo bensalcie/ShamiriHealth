@@ -7,5 +7,6 @@ class ScreenThree : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_screen_three)
+        supportActionBar?.hide()
     }
 }

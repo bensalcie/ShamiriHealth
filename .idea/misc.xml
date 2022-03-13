@@ -11,10 +11,13 @@
         <entry key="app/src/main/res/drawable/black_dot.xml" value="0.2515625" />
         <entry key="app/src/main/res/drawable/cornerback.xml" value="0.2515625" />
         <entry key="app/src/main/res/drawable/curve_end.xml" value="0.2515625" />
+        <entry key="app/src/main/res/drawable/curved_corners.xml" value="0.2515625" />
         <entry key="app/src/main/res/drawable/green_dot.xml" value="0.2515625" />
         <entry key="app/src/main/res/drawable/grey_dot.xml" value="0.2515625" />
+        <entry key="app/src/main/res/drawable/horizontal_line.xml" value="0.2515625" />
         <entry key="app/src/main/res/drawable/ic_baseline_arrow_forward_ios_24.xml" value="0.2515625" />
         <entry key="app/src/main/res/drawable/ic_baseline_keyboard_arrow_down_24.xml" value="0.2515625" />
+        <entry key="app/src/main/res/drawable/ic_baseline_keyboard_arrow_left_24.xml" value="0.2515625" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2515625" />
         <entry key="app/src/main/res/drawable/light_green_dot.xml" value="0.2515625" />
         <entry key="app/src/main/res/drawable/note_card.xml" value="0.2515625" />
@@ -23,6 +26,7 @@
         <entry key="app/src/main/res/drawable/vector_1.xml" value="0.2515625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.23541666666666666" />
         <entry key="app/src/main/res/layout/activity_screen_three.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/activity_screen_two.xml" value="0.23541666666666666" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.13385416666666666" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.13385416666666666" />
       </map>

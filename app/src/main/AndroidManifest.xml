@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AsessementApp">
         <activity
+            android:name=".ScreenTwo"
+            android:exported="true" />
+        <activity
             android:name=".ScreenThree"
             android:exported="true" />
         <activity
