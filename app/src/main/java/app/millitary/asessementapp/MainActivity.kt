@@ -13,5 +13,6 @@ class MainActivity : AppCompatActivity() {
 
     fun movetoSecondPage(view: android.view.View) {
         startActivity(Intent(this,ScreenTwo::class.java))
+        finish()
     }
 }

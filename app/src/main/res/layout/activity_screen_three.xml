@@ -7,18 +7,228 @@
     tools:context=".ScreenThree">
     <LinearLayout
         android:layout_width="match_parent"
+        android:orientation="vertical"
         android:layout_height="wrap_content">
-<!--        <RelativeLayout-->
-<!--            xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--            android:id="@+id/note_card"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="147dp"-->
-<!--            android:layout_alignParentLeft="true"-->
-<!--            android:layout_alignParentTop="true"-->
-<!--            android:clipToOutline="true"-->
-<!--            android:background="@drawable/note_card"-->
-<!--            android:elevation="34dp"-->
-<!--            />-->
+
+        <!--        action bar-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/backbtn"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:onClick="movetoPrevious"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@null"
+                android:src="@drawable/ic_baseline_keyboard_arrow_left_24" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/secondtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@id/backbtn"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Jan 13 - Jan 19, 2022 "
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/backbtn"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/horizontal_line" />
+
+        </RelativeLayout>
+        <lib.kingja.switchbutton.SwitchMultiButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            app:strokeRadius="15dp"
+            android:id="@+id/switchfamily"
+            app:strokeWidth="1dp"
+
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            app:selectedTab="1"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="13dp"
+            app:selectedColor="@color/main_color"
+            app:switchTabs="@array/switch_tabs"
+            app:textSize="14sp" />
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toptext"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/raleway_extrabold"
+            android:text="Mental Health"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/toptext"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#C4C4C4"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text="Weekly average"
+                    android:textSize="13sp" />
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/toptext"
+                    android:layout_gravity="center"
+                    android:textColor="#E3A89F"
+                    android:fontFamily="@font/raleway_extrabold"
+                    android:text="6"
+                    android:textSize="28sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/toptext"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#C4C4C4"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text="Week over week"
+                    android:textSize="13sp" />
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/toptext"
+                    android:textColor="#E3A89F"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/raleway_extrabold"
+                    android:text="20%"
+
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/arrowme"
+                    android:textSize="28sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/toptext"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#C4C4C4"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text="Goal"
+                    android:layout_gravity="center"
+                    android:textSize="13sp" />
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/toptext"
+                    android:textColor="#E3A89F"
+                    android:fontFamily="@font/raleway_extrabold"
+                    android:text="8"
+                    android:layout_gravity="center"
+                    android:textSize="28sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/horgraph"
+            android:layout_marginStart="25dp"
+
+            android:layout_marginEnd="25dp"
+            android:layout_height="200dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/horizontal_line" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toptext"
+            android:layout_marginStart="35dp"
+            android:fontFamily="@font/raleway_extrabold"
+            android:text="Recommendation"
+            android:textSize="16sp" />
+        <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:cardUseCompatPadding="true"
+            android:layout_margin="16dp"
+            app:cardPreventCornerOverlap="true"
+            android:layout_height="wrap_content">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:orientation="vertical"
+               android:layout_height="match_parent">
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:scaleType="centerCrop"
+                   android:src="@drawable/patientdocto"
+                   android:layout_height="180dp"/>
+               <com.google.android.material.textview.MaterialTextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/toptext"
+                   android:layout_marginTop="10dp"
+                   android:textColor="#C4C4C4"
+                   android:fontFamily="@font/raleway_medium"
+                   android:text="1-on-1 Session"
+                   android:textSize="16sp" />
+               <com.google.android.material.textview.MaterialTextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/toptext"
+                   android:fontFamily="@font/raleway_medium"
+                   android:text="Talk to our therapist about employee burnout?"
+                   android:textSize="16sp" />
+
+           </LinearLayout>
+
+        </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+
+
+
+
     </LinearLayout>
+
 
 </androidx.core.widget.NestedScrollView>

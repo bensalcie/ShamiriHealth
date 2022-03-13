@@ -19,7 +19,14 @@ class ScreenTwo : AppCompatActivity() {
 
         val mSwitchMultiButton = findViewById<View>(R.id.switchfamily) as SwitchMultiButton
         mSwitchMultiButton.setOnSwitchListener { position, tabText ->
-          startActivity(Intent(this,ScreenThree::class.java))
+          if (position==1){
+              startActivity(Intent(this,ScreenThree::class.java))
+          }
         }
+    }
+
+    fun movetoPrevious(view: android.view.View) {
+        startActivity(Intent(this,MainActivity::class.java))
+        finish()
     }
 }
